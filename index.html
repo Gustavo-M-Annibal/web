@@ -1,45 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css" />
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Prog_Web</title>
-  </head>
+</head>
+<body>
 
-  <body>
-    
     <header>
-      <h1>Célia Moreira</h1>
+        <h1>Célia Moreira</h1>
     </header>
 
-    <nav>
-      <a href="sobre.html">Sobre</a>
-      <a href="servicos.html">Serviços</a>
-      <a href="galeria.html">Galeria</a>
-      <a href="contato.html">Contato</a>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
     </nav>
 
-    <P> A QUI VAMOS DEIXAR ASSIM POR ENQUANTO, TENDO EM VISTA QUE AS INFORMAÇÕES DOS BOTÕES ESTÃO NELES </P>
+    <button class="open-btn" onclick="openMenu()">☰ Abrir Menu</button>
 
-  </body>
-  <nav class="navbar">
-    <ul>
-        <li><a href="index.html">Início</a></li>
-        <li><a href="sobre.html">Sobre</a></li>
-        <li><a href="menu.html">Menu</a></li>
-        <li><a href="contato.html">Contato</a></li>
-    </ul>
-</nav>
-<button class="open-btn" onclick="openMenu()">☰ Abrir Menu</button>
-
-<div id="sidebar" class="sidebar">
-    <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">×</a>
-    <div class="profile">
-        <img src="profile.jpg" alt="Foto de Perfil">
-        <h2>Seu Nome</h2>
-        <p>Descrição do perfil.</p>
-        <a href="#">Editar Perfil</a>
+    <div id="sidebar" class="sidebar">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">×</a>
+        <div class="profile">
+            <img src="profile.jpg" alt="Foto de Perfil">
+            <h2>Seu Nome</h2>
+            <p>Descrição do perfil.</p>
+            <a href="#">Editar Perfil</a>
+        </div>
     </div>
-</div>
+
+    <section>
+        <p>Aqui vamos deixar assim por enquanto, tendo em vista que as informações dos botões estão neles.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
 </html>
