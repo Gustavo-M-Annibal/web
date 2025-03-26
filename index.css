@@ -73,4 +73,61 @@ footer {
     body {
         margin-top: 60px; 
     }
+    .sidebar {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: #111;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+    }
+    
+    .sidebar a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    
+    .sidebar a:hover {
+        background-color: #575757;
+    }
+    
+    .sidebar .profile {
+        text-align: center;
+        color: white;
+        padding: 20px;
+    }
+    
+    .sidebar .profile img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+    
+    .open-btn {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 20px;
+        background-color: #800080;
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        cursor: pointer;
+    }
+    
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        font-size: 25px;
+        color: white;
+        cursor: pointer;
+    }
 }
