@@ -38,21 +38,13 @@ footer {
 }
 
 /* NAVBAR FIXA NO TOPO */
-.navbar {
-    background-color: #333;  /* Cor de fundo */
-    padding: 15px 0;
-    position: fixed; /* Fixa no topo */
-    width: 100%;
+.navbar-purple {
+    position: absolute;
     top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+    width: 100%;
+    background-color: purple;
+    height: 50px; /* Ajuste conforme necessário */
+    z-index: 2; /* Para ficar sobre os outros elementos */
 }
 
 .navbar ul li {
