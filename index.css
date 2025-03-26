@@ -70,4 +70,7 @@ footer {
         background-color: #555;
         border-radius: 5px;
     }
+    body {
+        margin-top: 60px; 
+    }
 }
