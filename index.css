@@ -14,7 +14,7 @@ header {
 }
 
 nav {
-    background: #800000; /* Aqui tava errado, tinha colocado 800000 sem "#" */
+    background: #555; /* Aqui tava errado, tinha colocado 800000 sem "#" */
     padding: 10px;
 }
 
