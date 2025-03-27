@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#555;
+    background-color:#2d2b2b;
     color: white;
     text-align: center;
 }
@@ -14,7 +14,7 @@ header {
 }
 
 nav {
-    background: #555; /* Aqui tava errado, tinha colocado 800000 sem "#" */
+    background: #2d2b2b; /* Aqui tava errado, tinha colocado 800000 sem "#" */
     padding: 10px;
 }
 
@@ -29,7 +29,7 @@ section {
 }
 
 footer {
-    background: #555;
+    background: #2d2b2b;
     color: white;
     padding: 10px;
     position: relative;
@@ -77,7 +77,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #555;
+    background-color: #2d2b2b;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
@@ -93,7 +93,7 @@ body {
 }
 
 .sidebar a:hover {
-    background-color: #767171;
+    background-color: #2d2b2b;
 }
 
 .sidebar .profile {
