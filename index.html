@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <title>Prog_Web</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <h1>Célia Moreira</h1>
+      <h1>Célia Moreira</h1>
     </header>
 
     <nav class="navbar">
-        <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
     </nav>
 
     <button class="open-btn" onclick="openMenu()">☰ Abrir Menu</button>
 
     <div id="sidebar" class="sidebar">
-        <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">×</a>
-        <div class="profile">
-            <img src="profile.jpg" alt="Foto de Perfil">
-            <h2>Seu Nome</h2>
-            <p>Descrição do perfil.</p>
-            <a href="#">Editar Perfil</a>
-        </div>
+      <a href="javascript:void(0)" class="close-btn" onclick="closeMenu()">×</a>
+      <div class="profile">
+        <img src="profile.jpg" alt="Foto de Perfil" />
+        <h2>Seu Nome</h2>
+        <p>Descrição do perfil.</p>
+        <a href="#">Editar Perfil</a>
+      </div>
     </div>
 
     <section>
-        <p>Aqui vamos deixar assim por enquanto, tendo em vista que as informações dos botões estão neles.</p>
+      <p>
+        Aqui vamos deixar assim por enquanto, tendo em vista que as informações
+        dos botões estão neles.
+      </p>
     </section>
 
+    <script>
+      function openMenu() {
+        document.getElementById("sidebar").style.width = "250px";
+      }
+    </script>
+
+    <script>
+      function closeMenu() {
+        document.getElementById("sidebar").style.width = "0";
+      }
+    </script>
+
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
