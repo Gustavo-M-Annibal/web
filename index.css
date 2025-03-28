@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background: #a028ff;
+    background: #b728ff;
     color: white;
     padding: 15px;
 }
@@ -129,4 +129,10 @@ body {
     font-size: 25px;
     color: white;
     cursor: pointer;
+}
+
+.imagem-inicial {
+    width: 100%; /* Ajusta a largura para cobrir a tela */
+    max-height: 800px; /* Altura máxima da imagem */
+    object-fit: cover; /* Mantém o enquadramento sem distorção */
 }
