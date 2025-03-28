@@ -42,7 +42,7 @@ footer {
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: #a028ff;
+    background-color: #dfd9e5;
     height: 50px; /* Ajuste conforme necessário */
     z-index: 2; /* Para ficar sobre os outros elementos */
 }
