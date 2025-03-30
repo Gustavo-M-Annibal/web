@@ -132,7 +132,7 @@ body {
 }
 
 .imagem-inicial {
-    width: 50%; /* Ajusta a largura para cobrir a tela */
-    max-height: 100px; /* Altura máxima da imagem */
+    width:100%; /* Ajusta a largura para cobrir a tela */
+    max-height: 90px; /* Altura máxima da imagem */
     object-fit: cover; /* Mantém o enquadramento sem distorção */
 }
