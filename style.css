@@ -212,20 +212,39 @@ body {
     text-align: left; /* Alinha o texto à esquerda */
     font-family: "Playfair Display", serif;
     color: bisque;
-    font-size: 20px;
+    font-size: 24px;
     margin-top: 10px; /* Espaçamento superior */
+}
+
+#info_sobre2 {
+    text-align: left; /* Alinha o texto à esquerda */
+    font-family: "Playfair Display", serif;
+    color: bisque;
+    font-size: 22px;
+    margin-top: 10px; /* Espaçamento superior */
+}
+
+#servicos-lista {
+    color: bisque;
+}
+
+#padrao_id_bar{
+
+    font-size: 50px;
+    color: white;
+    font-family: "Playfair Display", serif;
+    text-align: center;
 }
 
 a {
   text-decoration: none; /* Remove o sublinhado dos links */
   color: #e67e22; /* Cor dos links */
-
   background: linear-gradient(45deg, #e67e22, #ff9800); /* Gradiente suave */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* Deixa o gradiente visível */
 }
 
-/*
+/*  
 p {
   text-align: left; /* Alinha o texto à esquerda 
   font-family: "Playfair Display", serif;
@@ -243,7 +262,7 @@ h1 {
 
 h2 {
   font-family: "Playfair Display", serif;
-  /*font-size: 32px;*/
+  font-size: 34px;
   color: #e67e22; /* Diferenciação nos subtítulos */
 }
 
