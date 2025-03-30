@@ -1,138 +1,163 @@
+/* Estilos Gerais */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color:#2d2b2b;
-    color: white;
+    background-color: #1E1E1E;
+    color: #F5F5F5;
     text-align: center;
-}
-
-header {
-    background: #b728ff;
+  }
+  
+  header {
+    background: #FACC15;
     color: white;
     padding: 15px;
-}
-
-nav {
-    background: #2d2b2b; /* Aqui tava errado, tinha colocado 800000 sem "#" */
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+  }
+  
+  nav {
+    background: #1E1E1E;
     padding: 10px;
-}
-
-nav a { 
+  }
+  
+  nav a {
     color: white;
     text-decoration: none;
     margin: 0 10px;
-}
-
-section {
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  
+  nav a:hover {
+    color: #E67E22;
+  }
+  
+  section {
     padding: 20px;
-}
-
-footer {
-    background: #2d2b2b;
+  }
+  
+  footer {
+    background: #1E1E1E;
     color: white;
     padding: 10px;
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-/* NAVBAR FIXA NO TOPO */
-.navbar-purple {
+  }
+  
+  /* NAVBAR FIXA NO TOPO */
+  .navbar-purple {
     position: absolute;
     top: 0;
     width: 100%;
-    background-color: #dfd9e5;
-    height: 50px; /* Ajuste conforme necessário */
-    z-index: 2; /* Para ficar sobre os outros elementos */
-}
-
-.navbar ul li {
+    background-color: #F5F5F5;
+    height: 50px;
+    z-index: 2;
+  }
+  
+  .navbar ul li {
     display: inline;
     margin: 0 15px;
-}
-
-.navbar ul li a {
-    color: white;
+  }
+  
+  .navbar ul li a {
+    color: #333;
     text-decoration: none;
     font-size: 18px;
     padding: 10px 15px;
     transition: 0.3s;
-}
-
-.navbar ul li a:hover {
-    background-color: #555;
+  }
+  
+  .navbar ul li a:hover {
+    background-color: #E67E22;
     border-radius: 5px;
-}
-
-/* BODY NÃO FICAR COBERTO PELA NAVBAR */
-body {
-    margin-top: 60px; 
-}
-
-/* MENU LATERAL */
-.sidebar {
+  }
+  
+  /* BODY NÃO FICAR COBERTO PELA NAVBAR */
+  body {
+    margin-top: 60px;
+  }
+  
+  /* MENU LATERAL */
+  .sidebar {
     height: 100%;
     width: 0;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #2d2b2b;
+    background-color: #333;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
-}
-
-.sidebar a {
+  }
+  
+  .sidebar a {
     padding: 10px 15px;
     text-decoration: none;
     font-size: 20px;
-    color: white;
+    color: #F5F5F5;
     display: block;
     transition: 0.3s;
-}
-
-.sidebar a:hover {
-    background-color: #2d2b2b;
-}
-
-.sidebar .profile {
+  }
+  
+  .sidebar a:hover {
+    background-color: #444;
+  }
+  
+  .sidebar .profile {
     text-align: center;
     color: white;
     padding: 20px;
-}
-
-.sidebar .profile img {
+  }
+  
+  .sidebar .profile img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
-}
-
-/* BOTÃO DE ABRIR O MENU */
-.open-btn {
-    position: fixed; /* Corrigi para fixed, antes era absolute */
+  }
+  
+  /* BOTÃO DE ABRIR O MENU */
+  .open-btn {
+    position: fixed;
     top: 10px;
     left: 10px;
     font-size: 20px;
-    background-color: #800080;
+    background-color: #E67E22;
     color: white;
     border: none;
     padding: 10px 15px;
     cursor: pointer;
-}
-
-/* BOTÃO DE FECHAR O MENU */
-.close-btn {
+    border-radius: 5px;
+  }
+  
+  /* BOTÃO DE FECHAR O MENU */
+  .close-btn {
     position: absolute;
     top: 10px;
     right: 15px;
     font-size: 25px;
     color: white;
     cursor: pointer;
+  }
+  
+.imagem-inicial {
+  width: 100%; /* Ajusta a largura para cobrir a tela */
+  max-height: 90px; /* Altura máxi    ma da imagem */
+  object-fit: cover; /* Mantém o enquadramento sem distorção */
+  opacity: 0.8; /* Opacidade da imagem */
+}
+/*
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+
+h1 {
+  font-family: "Blackadder ITC", cursive;
+  font-size: 36px;
 }
 
-.imagem-inicial {
-    width:100%; /* Ajusta a largura para cobrir a tela */
-    max-height: 90px; /* Altura máxima da imagem */
-    object-fit: cover; /* Mantém o enquadramento sem distorção */
+p {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 18px;
 }
+*/
