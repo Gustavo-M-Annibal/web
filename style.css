@@ -143,7 +143,7 @@ body {
   
 .imagem-inicial {
   width: 100%; /* Ajusta a largura para cobrir a tela */
-  max-height: 90px; /* Altura máxi    ma da imagem */
+  max-height: 150px; /* Altura máxi    ma da imagem */
   object-fit: cover; /* Mantém o enquadramento sem distorção */
   opacity: 0.8; /* Opacidade da imagem */
 }
@@ -161,3 +161,9 @@ p {
   font-size: 18px;
 }
 */
+.perfil-img {
+  width:99px;
+  height: 90px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
