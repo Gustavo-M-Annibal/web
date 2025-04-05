@@ -157,15 +157,6 @@ body {
   background-color: #d35400; /* Sutil mudança no botão */
 }
 
-/* BOTÃO DE FECHAR O MENU */
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 25px;
-  color: white;
-  cursor: pointer;
-}
 
 .imagem-inicial {
   width: 100%; /* Ajusta a largura para cobrir a tela */
@@ -174,31 +165,6 @@ body {
   opacity: 0.8; /* Opacidade da imagem */
 }
 
-.galeria01 {
-  width: 30%; /* Ajusta a largura para cobrir a tela */
-  max-height: 600px; /* Altura máxima da imagem */
-  width: 500px; /* Define uma largura fixa */
-  margin-top: -60px;
-  float: left; /* Move a imagem para a esquerda */
-  margin-right: 10px; /* Adiciona espaço ao lado direito da imagem */
-}
-
-.galeria02 {
-  width: 30%; /* Ajusta a largura para cobrir a tela */
-  max-height: 600px; /* Altura máxima da imagem */
-  width: 500px; /* Define uma largura fixa */
-  margin-top: -60px;
-  float: right; /* Move a imagem para a direita */
-  margin-right: 10px; /* Adiciona espaço ao lado direito da imagem */
-}
-
-.galeria03 {
-  width: 50%; /* Ajusta a largura para cobrir a tela */
-  max-height: 1000px; /* Altura máxima da imagem */
-  width: 500px; /* Define uma largura fixa */
-  margin-top: +200px;
-  float: center; /* Move a imagem para a direita */
-}
 
 /* NOVO EFEITO DE TRANSPARÊNCIA */
 .imagem-inicial:hover {
@@ -301,4 +267,27 @@ li {
   font-family: "Playfair Display", serif;
   font-size: 18px;
   margin-bottom: 10px; /* Melhora a separação entre itens */
+}
+
+.imagens-galeria img {
+  width: 30%; /* Ajusta o tamanho das imagens para caberem lado a lado */
+  height: auto; /* Mantém a proporção da imagem */
+  margin: 1%; /* Espaçamento entre as imagens */
+  display: inline-block; /* Exibe as imagens lado a lado */
+  box-sizing: border-box; /* Inclui bordas no cálculo do tamanho */
+}
+
+#galeria01 {
+  text-align: left; /* Centraliza o conteúdo da galeria */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+#galeria02 {
+  text-align: right; /* Centraliza o conteúdo da galeria */
+  margin-top: 20px; /* Espaçamento superior */
+}
+
+#galeria03 {
+   /* Centraliza o conteúdo da galeria */
+  margin-top: 20px; /* Espaçamento superior */
 }
