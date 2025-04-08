@@ -10,14 +10,34 @@
     <header>
       <h1 id="padrao_id_bar">Galeria</h1>
     </header>
+    
+    <!--codigo para fazer o menu checkbox em formato de hamburguer-->
 
-    <nav>
-      <a href="Inicio.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="servicos.html">Serviços</a>
-      <a href="galeria.html">Galeria</a>
-      <a href="contato.html">Contato</a>
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="menu-canto">
+      <div class="perfil">
+        <img src="img/perfil.png" alt="Perfil visitante" />
+        <p>Olá, visitante!</p>
+      </div>
+      <ul>
+        <li><a href="Inicio.html">🏠 Início</a></li>
+        <li><a href="sobre.html">📖 Sobre</a></li>
+        <li><a href="servicos.html">🧵 Serviços</a></li>
+        <li><a href="galeria.html">🖼️ Galeria</a></li>
+        <li><a href="contato.html">📞 Contato</a></li>
+      </ul>
     </nav>
+
+    <!--final do codigo do menu-->
+
+    <input type="checkbox" id="menu-toggle" />
+    <a href="inicio.html" class="titulo-central">Ateliê da Célia</a>
 
     <section id="galeria">
       <h2>Galeria</h2>
@@ -25,11 +45,22 @@
         Confira algumas das peças que transformamos com nosso trabalho.
       </p>
       <div class="imagens-galeria">
-        <img src="img/image.jpeg" class="galeria01" alt="Descrição da imagem 1" />
-        <img src="img/image.jpeg" class="galeria02" alt="Descrição da imagem 2" />
-        <img src="img/image.jpeg" class="galeria03" alt="Descrição da imagem 3" />
+        <img
+          src="img/image.jpeg"
+          class="galeria01"
+          alt="Descrição da imagem 1"
+        />
+        <img
+          src="img/image.jpeg"
+          class="galeria02"
+          alt="Descrição da imagem 2"
+        />
+        <img
+          src="img/image.jpeg"
+          class="galeria03"
+          alt="Descrição da imagem 3"
+        />
       </div>
     </section>
-    
   </body>
 </html>
