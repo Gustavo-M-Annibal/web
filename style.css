@@ -291,154 +291,12 @@ li {
    /* Centraliza o conteúdo da galeria */
   margin-top: 20px; /* Espaçamento superior */
 }
-
-.menu-canto {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background-color: #333;
-  padding: 15px 10px;
-  border-radius: 15px;
-  z-index: 1000;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.menu-canto ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu-canto ul li {
-  margin-bottom: 10px;
-}
-
-.menu-canto ul li a {
-  color: #f5f5f5;
-  text-decoration: none;
-  font-size: 16px;
-  display: block;
-  padding: 8px 12px;
-  border-radius: 10px;
-  transition: background 0.3s ease;
-}
-
-.menu-canto ul li a:hover {
-  background-color: #e67e22;
-  color: white;
-}
-
 /* Oculta o checkbox */
 #menu-toggle {
   display: none;
 }
 
-/* Ícone hamburguer */
-.menu-icon {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1100;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 30px;
-  height: 25px;
-  cursor: pointer;
-}
-
-.menu-icon span {
-  display: block;
-  height: 4px;
-  background-color: #fff;
-  border-radius: 2px;
-  transition: 0.3s ease;
-}
-
-/* Animação do "X" */
-#menu-toggle:checked + .menu-icon span:nth-child(1) {
-  transform: rotate(45deg) translate(5px, 5px);
-}
-#menu-toggle:checked + .menu-icon span:nth-child(2) {
-  opacity: 0;
-}
-#menu-toggle:checked + .menu-icon span:nth-child(3) {
-  transform: rotate(-45deg) translate(6px, -6px);
-}
-
-/* Estilo geral do menu */
-.menu-canto {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  width: 240px;
-  background: #222;
-  border-radius: 20px;
-  padding: 20px 15px;
-  transform: translateX(-300px);
-  transition: transform 0.4s ease;
-  z-index: 1000;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-}
-
-/* Quando ativado */
-#menu-toggle:checked ~ .menu-canto {
-  transform: translateX(0);
-}
-
-/* Perfil no topo */
-.menu-canto .perfil {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.menu-canto .perfil img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  border: 2px solid #e67e22;
-  box-shadow: 0 0 10px rgba(230, 126, 34, 0.5);
-}
-
-.menu-canto .perfil p {
-  margin-top: 10px;
-  color: #f5f5f5;
-  font-weight: bold;
-  font-family: "Playfair Display", serif;
-}
-
-/* Itens de navegação */
-.menu-canto ul {
-  list-style: none;
-  padding: 0;
-}
-
-.menu-canto ul li {
-  margin: 15px 0;
-}
-
-.menu-canto ul li a {
-  display: block;
-  color: #f5f5f5;
-  font-size: 18px;
-  padding: 10px 15px;
-  border-radius: 10px;
-  transition: 0.3s;
-  text-align: left;
-}
-
-.menu-canto ul li a:hover {
-  background-color: #e67e22;
-  color: white;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-}
-
-/* Oculta o checkbox */
-#menu-toggle {
-  display: none;
-}
-
-/* Ícone hamburguer */
+/* Ícone hambúrguer */
 .menu-icon {
   position: fixed;
   top: 20px;
@@ -460,7 +318,7 @@ li {
   transition: 0.3s ease;
 }
 
-/* Animação para transformar em "X" */
+/* Animação "X" */
 #menu-toggle:checked + .menu-icon span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
@@ -471,26 +329,25 @@ li {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
-/* Menu vertical ocupando a tela inteira */
+/* Painel lateral fixo esquerdo */
 .menu-canto {
   position: fixed;
   top: 0;
   left: 0;
+  width: 250px;
   height: 100%;
-  width: 100%;
-  background: rgba(34, 34, 34, 0.95); /* fundo semi-transparente */
+  background-color: #222;
   transform: translateX(-100%);
   transition: transform 0.4s ease;
   z-index: 1100;
-  padding: 50px 30px;
+  padding: 30px 20px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
 }
 
-/* Quando ativado */
+/* Mostrar quando ativado */
 #menu-toggle:checked ~ .menu-canto {
   transform: translateX(0);
 }
@@ -502,108 +359,28 @@ li {
 }
 
 .menu-canto .perfil img {
-  width: 100px;
-  height: 100px;
+  width: 120px; 
+  height: 120px;
   border-radius: 50%;
-  border: 3px solid #e67e22;
-  box-shadow: 0 0 15px rgba(230, 126, 34, 0.5);
+  object-fit: cover;
+  background-color: #444;
+  border: none;
+  display: block;
+  margin: 0 auto;
 }
 
+/* Nome do perfil */
 .menu-canto .perfil p {
   margin-top: 10px;
   color: #f5f5f5;
   font-weight: bold;
-  font-size: 20px;
   font-family: "Playfair Display", serif;
+  font-size: 18px;
 }
 
-/* Links do menu */
+/* Menu links */
 .menu-canto ul {
   list-style: none;
   padding: 0;
-  width: 100%;
-  text-align: center;
-}
-
-.menu-canto ul li {
-  margin: 20px 0;
-}
-
-.menu-canto ul li a {
-  display: block;
-  font-size: 22px;
-  padding: 12px;
-  border-radius: 12px;
-  color: #f5f5f5;
-  transition: 0.3s;
-  font-family: "Poppins", sans-serif;
-}
-
-.menu-canto ul li a:hover {
-  background-color: #e67e22;
-  color: white;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.4);
-}
-
-
-/* Estilo do ícone do menu hambúrguer */
-.menu-icon {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  cursor: pointer;
-  z-index: 1001;
-}
-
-.menu-icon div {
-  width: 30px;
-  height: 4px;
-  background-color: #fff;
-  margin: 6px 0;
-  border-radius: 2px;
-  transition: 0.4s;
-}
-
-/* Estilo do menu lateral */
-.menu-canto {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  background-color: #333;
-  padding: 20px 10px;
-  border-radius: 15px;
-  z-index: 1000;
-  width: 200px;
-  transform: translateX(-250px);
-  transition: transform 0.4s ease;
-}
-
-.menu-canto ul {
-  list-style-type: none;
-  padding: 0;
   margin: 0;
-}
-
-.menu-canto ul li {
-  margin: 15px 0;
-}
-
-.menu-canto ul li a {
-  color: #f5f5f5;
-  text-decoration: none;
-  font-size: 16px;
-  display: block;
-  padding: 8px 12px;
-  border-radius: 10px;
-  transition: background 0.3s ease;
-}
-
-.menu-canto ul li a:hover {
-  background-color: #e67e22;
-  color: white;
-}
-
-/* Mostrar menu quando o checkbox está marcado */
-#menu-toggle:checked ~ .menu-canto {
-  transform: translateX(0);
-}
+  width: 100
