@@ -29,7 +29,6 @@ body::before {
 header {
   background: #facc15;
   color: white;
-  padding: 15px;
   font-family: "Playfair Display", serif;
   font-size: 24px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adiciona um sombreamento elegante */
@@ -160,10 +159,13 @@ body {
 
 
 .imagem-inicial {
-  width: 100%; /* Ajusta a largura para cobrir a tela */
-  max-height: 150px; /* Altura máxima da imagem */
-  object-fit: cover; /* Mantém o enquadramento sem distorção */
-  opacity: 0.8; /* Opacidade da imagem */
+  width: 100%;
+  height: 350px; /* altura reduzida como faixa */
+  object-fit: cover;
+  object-position: center; 
+  display: block;
+  margin-top: 80px; /* para não colar com o menu fixo */
+  opacity: 1;
 }
 
 
