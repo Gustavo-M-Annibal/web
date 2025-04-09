@@ -1,6 +1,6 @@
 /* Estilos Gerais */
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Century Gothic", sans-serif;
   margin: 0;
   padding: 0;
   background-color: #1e1e1e;
@@ -29,7 +29,7 @@ body::before {
 header {
   background: #facc15;
   color: white;
-  font-family: "Playfair Display", serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 24px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Adiciona um sombreamento elegante */
 }
@@ -180,7 +180,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "Playfair Display", serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 64px;
   color: #000; /* Preto */
   text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.4);
@@ -214,20 +214,20 @@ body {
 }
 
 #Titulo_principal {
-  font-family: "Playfair Display", serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 40px;
   color: bisque;
 }
 
 #Texto_inicial {
-  font-family: "Playfair Display", serif;
+  font-family: "Century Gothic", sans-serif;
   color: bisque;
   font-size: 30px;
 }
 
 #info_servicos {
   text-align: left; /* Alinha o texto à esquerda */
-  font-family: "Playfair Display", serif;
+  font-family: "Century Gothic", sans-serif;
   color: bisque;
   font-size: 20px;
   margin-top: 10px; /* Espaçamento superior */
@@ -235,7 +235,7 @@ body {
 
 #info_sobre {
   text-align: left; /* Alinha o texto à esquerda */
-  font-family: "Playfair Display", serif;
+  font-family: "Century Gothic", sans-serif;
   color: bisque;
   font-size: 24px;
   margin-top: 10px; /* Espaçamento superior */
@@ -243,7 +243,7 @@ body {
 
 #info_sobre2 {
   text-align: left; /* Alinha o texto à esquerda */
-  font-family: "Playfair Display", serif;
+  font-family: "Century Gothic", sans-serif;
   color: bisque;
   font-size: 22px;
   margin-top: 10px; /* Espaçamento superior */
@@ -256,7 +256,7 @@ body {
 #padrao_id_bar {
   font-size: 50px;
   color: white;
-  font-family: "Playfair Display", serif;
+  font-family: "Century Gothic", sans-serif;
   text-align: center;
 }
 
@@ -271,13 +271,13 @@ a {
 /*  
 p {
   text-align: left; /* Alinha o texto à esquerda 
-  font-family: "Playfair Display", serif;
+    font-family: "Century Gothic", sans-serif;
   font-size: 18px;
   line-height: 1.8;
 }
 */
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 40px;
   /*background: linear-gradient(45deg, #e67e22, #ff9800); /* Gradiente suave 
   -webkit-background-clip: text;
@@ -285,19 +285,19 @@ h1 {
 }
 
 h2 {
-  font-family: "Playfair Display", serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 34px;
   color: #e67e22; /* Diferenciação nos subtítulos */
 }
 
 h3 {
-  font-family: "Playfair Display", serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 28px;
 }
 
 li {
   text-align: left; /* Alinha o texto à esquerda */
-  font-family: "Playfair Display", serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 18px;
   margin-bottom: 10px; /* Melhora a separação entre itens */
 }
@@ -407,7 +407,7 @@ li {
   margin-top: 10px;
   color: #f5f5f5;
   font-weight: bold;
-  font-family: "Playfair Display", serif;
+  font-family: "Century Gothic", sans-serif;
   font-size: 18px;
 }
 
@@ -425,7 +425,7 @@ li {
   top: 0.02px;
   left: 50%;
   transform: translateX(-50%);
-  font-family: "Playfair Display", serif;
+    font-family: "Century Gothic", sans-serif;
   font-size: 40px;
   color: #facc15 !important;
   text-decoration: none;
