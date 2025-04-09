@@ -157,22 +157,52 @@ body {
   background-color: #d35400; /* Sutil mudança no botão */
 }
 
-
-.imagem-inicial {
+.imagem-container-amarela {
   width: 100%;
-  height: 350px; /* altura reduzida como faixa */
-  object-fit: cover;
-  object-position: center; 
-  display: block;
-  margin-top: 80px; /* para não colar com o menu fixo */
-  opacity: 1;
+  height: 280px;
+  background-color: #facc15;
+  overflow: hidden;
+  position: relative; /* necessário para posicionar o texto */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.imagem-ajustavel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 10%;
+}
 
-/* NOVO EFEITO DE TRANSPARÊNCIA */
-.imagem-inicial:hover {
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+.titulo-sobreposto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Playfair Display", serif;
+  font-size: 64px;
+  color: #000; /* Preto */
+  text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 15px 30px;
+  border-radius: 15px;
+  font-weight: bold;
+  z-index: 5;
+  text-align: center;
+}
+.logo-imagem-link {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.logo-imagem {
+  height: 35px; /* ajuste o tamanho conforme necessário */
+  object-fit: contain;
+  display: block;
 }
 
 /* PERFIL */
@@ -389,6 +419,7 @@ li {
   width: 100
 }
 
+/*
 .titulo-central {
   position: absolute;
   top: 0.02px;
@@ -408,7 +439,7 @@ li {
 
 .titulo-central:hover {
   color: #ffd700;
-}
+} */
 
 /* Faixa preta fixa no topo */
 .topo-fixo {
