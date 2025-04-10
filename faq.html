@@ -3,13 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contato - Ateliê da Célia</title>
+    <title>FAQ - Ateliê da Célia</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   </head>
-  <body class="pagina-contato">
-    <h1 class="titulo-contato">📬 Fale com o Ateliê</h1>
-
+  <body class="pagina-faq">
+    <!--codigo para fazer o menu checkbox em formato de hamburguer-->
     <div class="topo-fixo">
       <input type="checkbox" id="menu-toggle" />
       <label for="menu-toggle" class="menu-icon">
@@ -42,17 +41,31 @@
       </a>
     </div>
 
-    <form class="formulario-contato">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required />
+    <h1 class="titulo-faq">❓ Perguntas Frequentes</h1>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required />
+    <div class="faq-container">
+      <details>
+        <summary>Quais serviços o Ateliê oferece?</summary>
+        <p>
+          Realizamos ajustes, consertos, reformas e criação de roupas sob
+          medida.
+        </p>
+      </details>
 
-      <label for="mensagem">Mensagem:</label>
-      <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+      <details>
+        <summary>Qual o prazo médio para um ajuste?</summary>
+        <p>Depende da complexidade, mas geralmente entre 2 a 5 dias úteis.</p>
+      </details>
 
-      <button type="submit">Enviar</button>
-    </form>
+      <details>
+        <summary>Vocês atendem sob agendamento?</summary>
+        <p>Sim! Você pode agendar um horário para atendimento personalizado.</p>
+      </details>
+
+      <details>
+        <summary>Quais formas de pagamento são aceitas?</summary>
+        <p>Aceitamos Pix, cartão de crédito/débito e dinheiro.</p>
+      </details>
+    </div>
   </body>
 </html>
