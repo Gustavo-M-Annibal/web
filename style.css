@@ -192,7 +192,7 @@ body {
   text-align: center;
 }
 .logo-imagem-link {
-  position: fixed;
+  position: absolute;
   top: 15px;
   left: 50%;
   transform: translateX(-50%);
@@ -200,6 +200,7 @@ body {
 }
 
 .logo-imagem {
+  position: fixed;
   height: 35px; /* ajuste o tamanho conforme necessário */
   object-fit: contain;
   display: block;
@@ -453,4 +454,87 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.titulo-blog {
+  font-size: 42px;
+  color: #facc15;
+  text-align: center;
+  margin-top: 40px;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.lista-postagens {
+  list-style: square inside;
+  padding: 20px;
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #2a2a2a;
+  border-radius: 12px;
+}
+
+.lista-postagens li {
+  margin-bottom: 30px;
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.lista-postagens h2 {
+  color: #facc15;
+  margin-bottom: 10px;
+  font-family: "Century Gothic", sans-serif;
+}
+
+.lista-postagens .data {
+  color: #bbb;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.lista-postagens .resumo {
+  color: #f5f5f5;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.lista-postagens a {
+  color: #e67e22;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.lista-postagens a:hover {
+  color: #ff9800;
+}
+
+.imagem-postagem {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Garante formato quadrado */
+  object-fit: cover;
+  border-radius: 8px; /* Cantos levemente arredondados */
+  margin-bottom: 15px;
+}
+
+.lista-postagens {
+  list-style: none; /* remove os pontos */
+  padding: 0;        /* remove recuo padrão */
+}
+
+.blog-page {
+  background-color: #1e1e1e;
+  background-image: 
+    linear-gradient(
+      135deg,
+      rgba(250, 204, 21, 0.03) 25%,
+      transparent 25%,
+      transparent 50%,
+      rgba(250, 204, 21, 0.03) 50%,
+      rgba(250, 204, 21, 0.03) 75%,
+      transparent 75%,
+      transparent
+    );
+  background-size: 60px 60px;
 }
