@@ -1,63 +1,162 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Produto - Ateliê da Célia</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="pagina-produto">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produto - Ateliê da Célia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="pagina-produto">
+    <div class="topo-fixo">
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-  <!--codigo para fazer o menu checkbox em formato de hamburguer-->
-  <div class="topo-fixo">
-    <input type="checkbox" id="menu-toggle" />
-    <label for="menu-toggle" class="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+      <nav class="menu-canto">
+        <div class="perfil">
+          <img src="img/perfil.png" alt="Perfil padrão" class="perfil-img" />
 
-    <nav class="menu-canto">
-      <div class="perfil">
-        <img src="img/perfil.png" alt="Perfil padrão" class="perfil-img" />
+          <!-- VISITANTE -->
+          <div class="modo" id="visitante">
+            <p>Olá, Visitante!</p>
+            <a href="login.html" class="login-link">🔐 Login</a>
+          </div>
 
-        <!-- VISITANTE -->
-        <div class="modo" id="visitante">
-          <p>Olá, Visitante!</p>
-          <a href="login.html" class="login-link">🔐 Login</a>
+          <!-- ADMIN (visível com #admin na URL) -->
+          <div class="modo" id="admin">
+            <p>Olá, Admin!</p>
+            <a href="inicio.html" class="logout-btn">🚪 Logout</a>
+          </div>
         </div>
 
-        <!-- ADMIN (visível com #admin na URL) -->
-        <div class="modo" id="admin">
-          <p>Olá, Admin!</p>
-          <a href="inicio.html" class="logout-btn">🚪 Logout</a>
+        <ul>
+          <li><a href="Inicio.html">🏠 Início</a></li>
+          <li><a href="sobre.html">📖 Sobre</a></li>
+          <li><a href="servicos.html">🧵 Serviços</a></li>
+          <li><a href="produto.html">🖼️ Produtos</a></li>
+          <li><a href="contato.html">📞 Contato</a></li>
+          <li><a href="blog.html">📝 Blog</a></li>
+          <li><a href="faq.html">❓ FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!--final do codigo do menu-->
+
+      <input type="checkbox" id="menu-toggle" />
+      <a href="inicio.html" class="logo-imagem-link">
+        <img src="img/carretel.png" alt="Ateliê da Célia" class="logo-imagem" />
+      </a>
+    </div>
+
+    <div class="container-geral-produtos">
+      <h1 class="titulo-produtos">🧵 Produtos do Ateliê</h1>
+
+      <section class="vitrine-produtos">
+        <!-- Produto 1 -->
+        <div class="produto-box">
+          <img
+            src="img/vestido1.png"
+            alt="Vestido sob medida"
+            class="produto-img"
+          />
+          <h1 class="produto-titulo">Vestido de Festa Sob Medida</h1>
+          <p class="produto-descricao">
+            Feito com tecidos nobres. Ideal para eventos especiais.
+          </p>
+          <div class="rodape-produto">
+            <p class="produto-preco">R$ 349,90</p>
+            <button class="botao-comprar">🛒 Comprar Agora</button>
+          </div>
         </div>
-      </div>
 
-      <ul>
-        <li><a href="Inicio.html">🏠 Início</a></li>
-        <li><a href="sobre.html">📖 Sobre</a></li>
-        <li><a href="servicos.html">🧵 Serviços</a></li>
-        <li><a href="produto.html">🖼️ Galeria</a></li>
-        <li><a href="contato.html">📞 Contato</a></li>
-        <li><a href="blog.html">📝 Blog</a></li>
-        <li><a href="faq.html">❓ FAQ</a></li>
-      </ul>
-    </nav>
+        <!-- Produto 2 -->
+        <div class="produto-box">
+          <img
+            src="img/vestidofloral.png"
+            alt="Vestido Midi Floral"
+            class="produto-img"
+          />
+          <h1 class="produto-titulo">Vestido Midi Floral</h1>
+          <p class="produto-descricao">
+            Leve e confortável, perfeito para o dia a dia.
+          </p>
+          <div class="rodape-produto">
+            <p class="produto-preco">R$ 199,90</p>
+            <button class="botao-comprar">🛒 Comprar Agora</button>
+          </div>
+        </div>
 
-    <!--final do codigo do menu-->
+        <!-- Produto 3 -->
+        <div class="produto-box">
+          <img
+            src="img/conjunto casual.png"
+            alt="Conjunto Casual"
+            class="produto-img"
+          />
+          <h1 class="produto-titulo">Conjunto Casual</h1>
+          <p class="produto-descricao">
+            Estilo e conforto para o trabalho ou lazer.
+          </p>
+          <div class="rodape-produto">
+            <p class="produto-preco">R$ 229,90</p>
+            <button class="botao-comprar">🛒 Comprar Agora</button>
+          </div>
+        </div>
 
-  <div class="produto-container">
-    <img src="img/vestido1.jpg" alt="Vestido elegante" class="produto-img" />
+        <!-- Produto 4 -->
+        <div class="produto-box">
+          <img
+            src="img/macacaoelegante.png"
+            alt="Macacão Elegante"
+            class="produto-img"
+          />
+          <h1 class="produto-titulo">Macacão Elegante</h1>
+          <p class="produto-descricao">
+            Corte reto com cintura marcada. Puro charme!
+          </p>
+          <div class="rodape-produto">
+            <p class="produto-preco">R$ 269,90</p>
+            <button class="botao-comprar">🛒 Comprar Agora</button>
+          </div>
+        </div>
 
-    <h1 class="produto-titulo">Vestido Longo de Renda</h1>
-    <p class="produto-descricao">
-      Feito sob medida com detalhes em renda delicada. Perfeito para ocasiões especiais.
-    </p>
-    <p class="produto-preco">R$ 349,90</p>
+        <!-- Produto 5 -->
+        <div class="produto-box">
+          <img
+            src="img/saiaplissada.png"
+            alt="Saia Plissada"
+            class="produto-img"
+          />
+          <h1 class="produto-titulo">Saia Plissada</h1>
+          <p class="produto-descricao">
+            Versátil e elegante. Combina com tudo!
+          </p>
+          <div class="rodape-produto">
+            <p class="produto-preco">R$ 149,90</p>
+            <button class="botao-comprar">🛒 Comprar Agora</button>
+          </div>
+        </div>
 
-    <button class="botao-comprar">🛒 Comprar agora</button>
-  </div>
-
-</body>
+        <!-- Produto 6 -->
+        <div class="produto-box">
+          <img
+            src="img/blusarendada.png"
+            alt="Blusa Rendada"
+            class="produto-img"
+          />
+          <h1 class="produto-titulo">Blusa Rendada</h1>
+          <p class="produto-descricao">
+            Delicada e moderna. Ideal para dias especiais.
+          </p>
+          <div class="rodape-produto">
+            <p class="produto-preco">R$ 99,90</p>
+            <button class="botao-comprar">🛒 Comprar Agora</button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>

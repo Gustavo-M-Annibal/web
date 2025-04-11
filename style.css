@@ -744,63 +744,107 @@ details[open] summary::marker {
   color: #ffd700;
 }
 
+/* Estilo da página do produto */
 .pagina-produto {
   background-color: #1e1e1e;
-  color: #f5f5f5;
   font-family: "Century Gothic", sans-serif;
-  padding: 40px 20px;
-  text-align: center;
+  color: #f5f5f5;
+  padding: 60px 20px;
+  display: flex;
+  justify-content: center;
 }
 
-.produto-container {
-  max-width: 500px;
-  margin: 0 auto;
+/* Container do produto */
+.produto-box {
   background-color: #2a2a2a;
+  border-radius: 16px;
   padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 0 15px rgba(250, 204, 21, 0.1);
+  max-width: 100%;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(250, 204, 21, 0.1);
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
+/* Imagem do produto */
 .produto-img {
   width: 100%;
   height: auto;
-  border-radius: 8px;
+  border-radius: 10px;
   margin-bottom: 20px;
 }
 
+/* Título */
 .produto-titulo {
-  font-size: 28px;
+  font-size: 26px;
   color: #facc15;
-  margin-bottom: 10px;
-}
-
-.produto-descricao {
-  font-size: 16px;
-  line-height: 1.6;
   margin-bottom: 15px;
 }
 
-.produto-preco {
-  font-size: 22px;
-  color: #ffd700;
-  font-weight: bold;
-  margin-bottom: 20px;
+/* Descrição */
+.produto-descricao {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
 }
 
-.botao-comprar {
-  background-color: #facc15;
-  color: #1e1e1e;
-  font-size: 18px;
+/* Preço */
+.produto-preco {
+  font-size: 20px;
+  color: #ffd700;
   font-weight: bold;
-  border: none;
-  padding: 12px 20px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  box-sizing: border-box; /* como solicitado */
+  margin-bottom: 25px;
+}
+
+/* Botão de compra */
+.botao-comprar {
+  margin-top: auto;
   width: 100%;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1e1e1e;
+  background-color: #facc15;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  box-sizing: border-box; /* Requisito solicitado */
+  transition: background-color 0.3s;
 }
 
 .botao-comprar:hover {
   background-color: #ffd700;
+}
+
+.vitrine-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 80px;
+  padding: 80px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rodape-produto {
+  margin-top: auto; /* empurra esse bloco pro final */
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container-geral-produtos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5px 20px;
+}
+
+.titulo-produtos {
+  text-align: center;
+  font-size: 36px;
+  color: #facc15;
+  margin-bottom: 40px;
+  font-family: "Century Gothic", sans-serif;
 }
