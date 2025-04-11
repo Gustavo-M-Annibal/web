@@ -5,47 +5,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Ateliê da Célia</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-
     <div class="imagem-container-amarela">
-      <img src="img/backgroud.png" alt="Imagem Inicial" class="imagem-ajustavel" />
+      <img
+        src="img/backgroud.png"
+        alt="Imagem Inicial"
+        class="imagem-ajustavel"
+      />
       <div class="titulo-sobreposto">Ateliê da Célia</div>
     </div>
-    
 
     <!--codigo para fazer o menu checkbox em formato de hamburguer-->
     <div class="topo-fixo">
-    <input type="checkbox" id="menu-toggle" />
-    <label for="menu-toggle" class="menu-icon">
-      <span></span>
-      <span></span>
-      <span></span>
-    </label>
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="menu-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
 
-    <nav class="menu-canto">
-      <div class="perfil">
-        <img src="img/perfil.png" alt="Perfil visitante" />
-        <p>Olá, visitante!</p>
-      </div>
-      <ul>
-        <li><a href="Inicio.html">🏠 Início</a></li>
-        <li><a href="sobre.html">📖 Sobre</a></li>
-        <li><a href="servicos.html">🧵 Serviços</a></li>
-        <li><a href="galeria.html">🖼️ Galeria</a></li>
-        <li><a href="contato.html">📞 Contato</a></li>
-        <li><a href="blog.html">📝 Blog</a></li>
-        <li><a href="faq.html">❓ FAQ</a></li>
-      </ul>
-    </nav>
+      <nav class="menu-canto">
+        <div class="perfil">
+          <img src="img/perfil.png" alt="Perfil padrão" class="perfil-img" />
 
-    <!--final do codigo do menu-->
+          <!-- VISITANTE -->
+          <div class="modo" id="visitante">
+            <p>Olá, Visitante!</p>
+            <a href="login.html" class="login-link">🔐 Login</a>
+          </div>
 
-    <input type="checkbox" id="menu-toggle" />
-    <a href="inicio.html" class="logo-imagem-link">
-      <img src="img/carretel.png" alt="Ateliê da Célia" class="logo-imagem" />
-    </a>
+          <!-- ADMIN (visível com #admin na URL) -->
+          <div class="modo" id="admin">
+            <p>Olá, Admin!</p>
+            <a href="inicio.html" class="logout-btn">🚪 Logout</a>
+          </div>
+        </div>
+
+        <ul>
+          <li><a href="Inicio.html">🏠 Início</a></li>
+          <li><a href="sobre.html">📖 Sobre</a></li>
+          <li><a href="servicos.html">🧵 Serviços</a></li>
+          <li><a href="galeria.html">🖼️ Galeria</a></li>
+          <li><a href="contato.html">📞 Contato</a></li>
+          <li><a href="blog.html">📝 Blog</a></li>
+          <li><a href="faq.html">❓ FAQ</a></li>
+        </ul>
+      </nav>
+
+      <!--final do codigo do menu-->
+
+      <input type="checkbox" id="menu-toggle" />
+      <a href="inicio.html" class="logo-imagem-link">
+        <img src="img/carretel.png" alt="Ateliê da Célia" class="logo-imagem" />
+      </a>
     </div>
 
     <section>
