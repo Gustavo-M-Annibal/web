@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Tarefas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina-tarefas">
+  <div class="tarefas-container">
+    
+    <h1 class="titulo-tarefas">📋 Lista de Tarefas</h1>
+
+    <form>
+      <input type="text" placeholder="Digite uma nova tarefa..." disabled>
+      <button type="button" disabled>➕ Adicionar</button>
+    </form>
+
+    <ul class="lista-tarefas">
+      <li>
+        <label>
+          <input type="checkbox">
+          <span class="texto-tarefa">Organizar os tecidos</span>
+        </label>
+        <div class="botoes">
+          <button type="button" disabled title="Editar">✏️</button>
+          <button type="button" disabled title="Excluir">🗑️</button>
+        </div>
+      </li>
+
+      <li>
+        <label>
+          <input type="checkbox" checked>
+          <span class="texto-tarefa">Atualizar medidas dos clientes</span>
+        </label>
+        <div class="botoes">
+          <button type="button" disabled title="Editar">✏️</button>
+          <button type="button" disabled title="Excluir">🗑️</button>
+        </div>
+      </li>
+
+      <li>
+        <label>
+          <input type="checkbox">
+          <span class="texto-tarefa">Costurar novos modelos</span>
+        </label>
+        <div class="botoes">
+          <button type="button" disabled title="Editar">✏️</button>
+          <button type="button" disabled title="Excluir">🗑️</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+</html>
