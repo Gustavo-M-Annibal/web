@@ -1185,3 +1185,65 @@ figcaption {
   font-weight: bold;
   font-size: 18px;
 }
+
+.pagina-equipe {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  font-family: "Century Gothic", sans-serif;
+  padding: 120px 20px 60px;
+  text-align: center;
+}
+
+.titulo-equipe {
+  font-size: 36px;
+  color: #facc15;
+  margin-bottom: 40px;
+}
+
+.equipe-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.equipe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.membro {
+  background-color: #2a2a2a;
+  padding: 20px;
+  width: 260px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(250, 204, 21, 0.1);
+  text-align: center;
+}
+
+.foto-membro {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.membro h3 {
+  color: #facc15;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.cargo {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+.bio {
+  font-size: 14px;
+  color: #ddd;
+  line-height: 1.6;
+}
