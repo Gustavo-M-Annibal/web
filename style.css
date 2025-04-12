@@ -391,7 +391,7 @@ li {
   position: fixed;
   top: 0;
   left: 0;
-  width: 250px;
+  width: 280px; 
   height: 100%;
   background-color: #222;
   transform: translateX(-100%);
@@ -402,6 +402,22 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: auto; /* rolagem vertical ativada */
+}
+
+/* Estilo da barra de rolagem para o menu lateral */
+.menu-canto::-webkit-scrollbar {
+  width: 8px;
+}
+
+.menu-canto::-webkit-scrollbar-track {
+  background: #1e1e1e;
+}
+
+.menu-canto::-webkit-scrollbar-thumb {
+  background-color: #f39109;
+  border-radius: 6px;
+  border: 2px solid #1e1e1e;
 }
 
 #menu-toggle:checked ~ .menu-canto {
@@ -966,4 +982,54 @@ input[type="checkbox"]:checked + .texto-tarefa {
   font-size: 18px;
   color: #f5f5f5;
   cursor: not-allowed;
+}
+
+.pagina-testemunhos {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  font-family: "Century Gothic", sans-serif;
+  padding: 130px 20px 60px;
+  text-align: center;
+}
+
+.depoimentos-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.titulo-testemunhos {
+  font-size: 36px;
+  color: #facc15;
+  margin-bottom: 40px;
+}
+
+.depoimento {
+  background-color: #2a2a2a;
+  padding: 30px 20px;
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(250, 204, 21, 0.08);
+}
+
+.foto-depoimento {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.depoimento h3 {
+  font-size: 18px;
+  color: #facc15;
+  margin-bottom: 10px;
+}
+
+.depoimento blockquote {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ddd;
+  margin: 0 auto;
+  max-width: 600px;
 }
