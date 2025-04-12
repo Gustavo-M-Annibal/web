@@ -1033,3 +1033,49 @@ input[type="checkbox"]:checked + .texto-tarefa {
   margin: 0 auto;
   max-width: 600px;
 }
+
+.pagina-mapa {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  font-family: "Century Gothic", sans-serif;
+  padding: 120px 20px 60px;
+  text-align: center;
+}
+
+.titulo-mapa {
+  font-size: 36px;
+  color: #facc15;
+  margin-bottom: 40px;
+}
+
+.conteudo-mapa {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center; 
+}
+
+.estrutura-site {
+  list-style: none;
+  padding-left: 0;
+}
+
+.estrutura-site li {
+  padding: 8px 0;
+  text-indent: 20px; 
+}
+
+.estrutura-site ul {
+  list-style: circle;
+  padding-left: 60px; 
+  margin-top: 5px;
+  text-align: left; 
+}
+
+.estrutura-site a {
+  color: #facc15;
+  text-decoration: none;
+}
+
+.estrutura-site a:hover {
+  text-decoration: underline;
+}
