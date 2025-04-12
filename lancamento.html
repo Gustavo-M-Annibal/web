@@ -1,84 +1,87 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lançamento - Ateliê da Célia</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="pagina-lancamento">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lançamento - Ateliê da Célia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+  </head>
+  <body class="pagina-lancamento">
+    <!-- MENU e LOGO padrão -->
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-  <!-- MENU e LOGO padrão -->
-  <input type="checkbox" id="menu-toggle" />
-  <label for="menu-toggle" class="menu-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
+    <a href="inicio.html" class="logo-imagem-link">
+      <img src="img/carretel.png" alt="Logo" class="logo-imagem" />
+    </a>
 
-  <a href="inicio.html" class="logo-imagem-link">
-    <img src="img/carretel.png" alt="Logo" class="logo-imagem" />
-  </a>
-
-  <nav class="menu-canto">
-    <div class="perfil">
-      <img src="img/perfil.png" alt="Perfil" class="perfil-img" />
-      <p>Olá, Visitante!</p>
-      <a href="login.html" class="login-link">🔐 Login</a>
-    </div>
-    <ul>
-      <li><a href="Inicio.html">🏠 Início</a></li>
-      <li><a href="sobre.html">📖 Sobre</a></li>
-      <li><a href="servicos.html">🧵 Serviços</a></li>
-      <li><a href="galeria.html">🖼️ Galeria</a></li>
-      <li><a href="contato.html">📞 Contato</a></li>
-      <li><a href="blog.html">📝 Blog</a></li>
-      <li><a href="faq.html">❓ FAQ</a></li>
-      <li><a href="tarefas.html">✅ Tarefas</a></li>
-      <li><a href="testemunhos.html">💬 Depoimentos</a></li>
-      <li><a href="produto.html">🛍️ Produtos</a></li>
-      <li><a href="mapa.html">🗺️ Mapa do Site</a></li>
-      <li><a href="promocoes.html">💸 Promoções</a></li>
-      <li><a href="equipe.html">👗 Equipe</a></li>
-      <li><a href="lancamento.html">🚀 Lançamento</a></li>
-    </ul>
-  </nav>
-
-  <!-- CONTEÚDO -->
-  <main class="lancamento-container">
-    <h1 class="titulo-lancamento">🚀 Lançamento Exclusivo</h1>
-
-    <section class="info-lancamento">
-      <div class="lancamento-imagem">
-        <img src="img/colecaooutono.png" alt="Produto Lançamento" />
+    <nav class="menu-canto">
+      <div class="perfil">
+        <img src="img/perfil.png" alt="Perfil" class="perfil-img" />
+        <p>Olá, Visitante!</p>
+        <a href="login.html" class="login-link">🔐 Login</a>
       </div>
-      <div class="lancamento-detalhes">
-        <h2>Nova Coleção: Elegância Outono 🍂</h2>
-        <p>Descubra peças com tecidos nobres, cortes sofisticados e design exclusivo.</p>
+      <ul>
+        <li><a href="Inicio.html">🏠 Início</a></li>
+        <li><a href="blog.html">📝 Blog</a></li>
+        <li><a href="galeria.html">🖼️ Galeria</a></li>
+        <li><a href="produto.html">🛍️ Produtos</a></li>
+        <li><a href="promocoes.html">💸 Promoções</a></li>
+        <li><a href="lancamento.html">🚀 Lançamento</a></li>
+        <li><a href="servicos.html">🧵 Serviços</a></li>
+        <li><a href="faq.html">❓ FAQ</a></li>
+        <li><a href="testemunhos.html">💬 Depoimentos</a></li>
+        <li><a href="contato.html">📞 Contato</a></li>
+        <li><a href="equipe.html">👗 Equipe</a></li>
+        <li><a href="sobre.html">📖 Sobre</a></li>
+        <li><a href="mapa.html">🗺️ Mapa do Site</a></li>
+        <li><a href="tarefas.html">✔️ Tarefas</a></li>
+      </ul>
+    </nav>
 
-        <!-- Contagem animada -->
-        <p class="label-lancamento">Faltam:</p>
-        <time class="contador" datetime="2025-06-01">20 dias</time>
+    <!-- CONTEÚDO -->
+    <main class="lancamento-container">
+      <h1 class="titulo-lancamento">🚀 Lançamento Exclusivo</h1>
 
-        <ul class="recursos">
-          <li>Tecido sustentável</li>
-          <li>Design autoral da Célia</li>
-          <li>Disponível sob medida</li>
-          <li>Opção de personalização</li>
-        </ul>
-      </div>
-    </section>
+      <section class="info-lancamento">
+        <div class="lancamento-imagem">
+          <img src="img/colecaooutono.png" alt="Produto Lançamento" />
+        </div>
+        <div class="lancamento-detalhes">
+          <h2>Nova Coleção: Elegância Outono 🍂</h2>
+          <p>
+            Descubra peças com tecidos nobres, cortes sofisticados e design
+            exclusivo.
+          </p>
 
-    <!-- Formulário de pré-venda -->
-    <section class="formulario-pre-venda">
-      <h2>📋 Faça sua reserva antecipada</h2>
-      <form>
-        <input type="text" placeholder="Nome completo" required />
-        <input type="email" placeholder="E-mail" required />
-        <input type="tel" placeholder="Telefone (opcional)" />
-        <button type="submit">✅ Reservar Agora</button>
-      </form>
-    </section>
-  </main>
-</body>
+          <!-- Contagem animada -->
+          <p class="label-lancamento">Faltam:</p>
+          <time class="contador" datetime="2025-06-01">20 dias</time>
+
+          <ul class="recursos">
+            <li>Tecido sustentável</li>
+            <li>Design autoral da Célia</li>
+            <li>Disponível sob medida</li>
+            <li>Opção de personalização</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Formulário de pré-venda -->
+      <section class="formulario-pre-venda">
+        <h2>📋 Faça sua reserva antecipada</h2>
+        <form>
+          <input type="text" placeholder="Nome completo" required />
+          <input type="email" placeholder="E-mail" required />
+          <input type="tel" placeholder="Telefone (opcional)" />
+          <button type="submit">✅ Reservar Agora</button>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>

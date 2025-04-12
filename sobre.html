@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,110 +7,79 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
-  <body>
-    <header>
-      <h1 id="padrao_id_bar">Sobre a Costureira</h1>
-    </header>
+  <body class="pagina-sobre">
+    <!-- MENU padrão -->
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-    <div class="topo-fixo">
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+    <a href="inicio.html" class="logo-imagem-link">
+      <img src="img/carretel.png" alt="Logo" class="logo-imagem" />
+    </a>
 
-      <nav class="menu-canto">
-        <div class="perfil">
-          <img src="img/perfil.png" alt="Perfil padrão" class="perfil-img" />
-
-          <!-- VISITANTE -->
-          <div class="modo" id="visitante">
-            <p>Olá, Visitante!</p>
-            <a href="login.html" class="login-link">🔐 Login</a>
-          </div>
-
-          <!-- ADMIN (visível com #admin na URL) -->
-          <div class="modo" id="admin">
-            <p>Olá, Admin!</p>
-            <a href="inicio.html" class="logout-btn">🚪 Logout</a>
-          </div>
-        </div>
-
-        <ul>
-          <li><a href="Inicio.html">🏠 Início</a></li>
-          <li><a href="sobre.html">📖 Sobre</a></li>
-          <li><a href="servicos.html">🧵 Serviços</a></li>
-          <li><a href="produto.html">🖼️ Galeria</a></li>
-          <li><a href="contato.html">📞 Contato</a></li>
-          <li><a href="blog.html">📝 Blog</a></li>
-          <li><a href="faq.html">❓ FAQ</a></li>
-        </ul>
-      </nav>
-
-      <!--final do codigo do menu-->
-
-      <input type="checkbox" id="menu-toggle" />
-      <a href="inicio.html" class="logo-imagem-link">
-        <img src="img/carretel.png" alt="Ateliê da Célia" class="logo-imagem" />
-      </a>
-    </div>
-
-    <section id="sobre.html">
-      <h2>Sobre a costureira</h2>
-      <img
-        src="img/perfil-sem-foto.webp"
-        alt="Foto da costureira"
-        class="perfil-img"
-      />
-      <p id="info_sobre">
-        Uma história costurada com amor e dedicação O Ateliê da Célia nasceu há
-        mais de 10 anos, fruto da minha paixão pela costura e pelo universo da
-        moda. Desde pequena, eu observava minha avó trabalhar com tecidos e
-        linhas, e foi ali que descobri o encanto de transformar simples pedaços
-        de pano em verdadeiras obras de arte. Formada em Design de Moda e
-        Modelagem, decidi abrir meu próprio ateliê para oferecer um serviço
-        personalizado, onde cada peça carrega um toque único de elegância e
-        exclusividade. O que fazemos? No Ateliê da Célia, a costura vai muito
-        além da agulha e linha: é um processo artístico, onde cada detalhe
-        importa.<br />
-        Nosso ateliê é especializado em:
-      </p>
-
-      <ul id="info_sobre">
-        <li id="info_sobre2">
-          ✅ <strong>Ajustes e Reformas</strong> – Transformamos suas peças
-          favoritas para que fiquem perfeitas no seu corpo.
-        </li>
-        <li id="info_sobre2">
-          ✅ <strong>Criações Sob Medida</strong> – Roupas exclusivas para
-          eventos especiais, do casual ao sofisticado.
-        </li>
-        <li id="info_sobre2">
-          ✅ <strong>Customização de Peças</strong> – Damos uma nova vida ao seu
-          guarda-roupa, tornando suas roupas únicas.
-        </li>
-        <li id="info_sobre2">
-          ✅ <strong>Noivas e Festas</strong> – Vestidos sob medida para
-          casamentos, formaturas e ocasiões inesquecíveis.
-        </li>
+    <nav class="menu-canto">
+      <div class="perfil">
+        <img src="img/perfil.png" alt="Perfil" class="perfil-img" />
+        <p>Olá, Visitante!</p>
+        <a href="login.html" class="login-link">🔐 Login</a>
+      </div>
+      <ul>
+        <li><a href="Inicio.html">🏠 Início</a></li>
+        <li><a href="blog.html">📝 Blog</a></li>
+        <li><a href="galeria.html">🖼️ Galeria</a></li>
+        <li><a href="produto.html">🛍️ Produtos</a></li>
+        <li><a href="promocoes.html">💸 Promoções</a></li>
+        <li><a href="lancamento.html">🚀 Lançamento</a></li>
+        <li><a href="servicos.html">🧵 Serviços</a></li>
+        <li><a href="faq.html">❓ FAQ</a></li>
+        <li><a href="testemunhos.html">💬 Depoimentos</a></li>
+        <li><a href="contato.html">📞 Contato</a></li>
+        <li><a href="equipe.html">👗 Equipe</a></li>
+        <li><a href="sobre.html">📖 Sobre</a></li>
+        <li><a href="mapa.html">🗺️ Mapa do Site</a></li>
+        <li><a href="tarefas.html">✔️ Tarefas</a></li>
       </ul>
-      <p id="info_sobre">
-        Nosso diferencial: <br />
-        -💛 Atendimento personalizado, entendendo cada cliente como único.
-        <br />
-        -🪡 Materiais de alta qualidade, garantindo durabilidade e conforto.
-        <br />
-        -✨ Técnicas modernas combinadas com o toque artesanal da costura
-        tradicional. <br />
-        <br />
-        Se você busca qualidade, exclusividade e um atendimento especial, venha
-        conhecer o Ateliê da Célia! Será um prazer criar algo incrível para
-        você. <br />
+    </nav>
 
-        📍 Localização: Rua Marfim 561 - Maringá <br />
-        📞 Contato: (99) 9999-9999 <br />
-      </p>
-    </section>
+    <!-- CONTEÚDO SOBRE -->
+    <main class="sobre-container">
+      <h1 class="titulo-sobre">📖 Sobre o Ateliê da Célia</h1>
+
+      <section class="sobre-conteudo">
+        <img src="img/atelia.png" alt="Imagem do Ateliê" class="img-sobre" />
+
+        <div class="texto-sobre">
+          <p>
+            Fundado com amor e cuidado, o <strong>Ateliê da Célia</strong> é
+            referência em costura personalizada, ajustes de alta precisão e
+            criação de peças únicas. Com mais de uma década de experiência,
+            unimos tradição, elegância e inovação em cada ponto.
+          </p>
+
+          <h2>🎯 Missão</h2>
+          <p>
+            Transformar tecidos em experiências únicas, com amor, precisão e
+            estilo.
+          </p>
+
+          <h2>👁 Visão</h2>
+          <p>
+            Ser o ateliê de referência em moda sob medida, destacando-se pela
+            qualidade e atenção aos detalhes.
+          </p>
+
+          <h2>💛 Valores</h2>
+          <ul>
+            <li>Excelência artesanal</li>
+            <li>Respeito ao cliente</li>
+            <li>Paixão pela moda</li>
+            <li>Autenticidade e inovação</li>
+          </ul>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,144 +7,83 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
-  <body>
-    <header>
-      <h1 id="padrao_id_bar">Serviços</h1>
-    </header>
+  <body class="pagina-servicos">
+    <!-- MENU padrão -->
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-    <div class="topo-fixo">
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+    <a href="inicio.html" class="logo-imagem-link">
+      <img src="img/carretel.png" alt="Logo" class="logo-imagem" />
+    </a>
 
-      <nav class="menu-canto">
-        <div class="perfil">
-          <img src="img/perfil.png" alt="Perfil padrão" class="perfil-img" />
+    <nav class="menu-canto">
+      <div class="perfil">
+        <img src="img/perfil.png" alt="Perfil" class="perfil-img" />
+        <p>Olá, Visitante!</p>
+        <a href="login.html" class="login-link">🔐 Login</a>
+      </div>
+      <ul>
+        <li><a href="Inicio.html">🏠 Início</a></li>
+        <li><a href="blog.html">📝 Blog</a></li>
+        <li><a href="galeria.html">🖼️ Galeria</a></li>
+        <li><a href="produto.html">🛍️ Produtos</a></li>
+        <li><a href="promocoes.html">💸 Promoções</a></li>
+        <li><a href="lancamento.html">🚀 Lançamento</a></li>
+        <li><a href="servicos.html">🧵 Serviços</a></li>
+        <li><a href="faq.html">❓ FAQ</a></li>
+        <li><a href="testemunhos.html">💬 Depoimentos</a></li>
+        <li><a href="contato.html">📞 Contato</a></li>
+        <li><a href="equipe.html">👗 Equipe</a></li>
+        <li><a href="sobre.html">📖 Sobre</a></li>
+        <li><a href="mapa.html">🗺️ Mapa do Site</a></li>
+        <li><a href="tarefas.html">✔️ Tarefas</a></li>
+      </ul>
+    </nav>
 
-          <!-- VISITANTE -->
-          <div class="modo" id="visitante">
-            <p>Olá, Visitante!</p>
-            <a href="login.html" class="login-link">🔐 Login</a>
-          </div>
+    <!-- CONTEÚDO DE SERVIÇOS -->
+    <main class="servicos-container">
+      <h1 class="titulo-servicos">🧵 Nossos Serviços</h1>
 
-          <!-- ADMIN (visível com #admin na URL) -->
-          <div class="modo" id="admin">
-            <p>Olá, Admin!</p>
-            <a href="inicio.html" class="logout-btn">🚪 Logout</a>
-          </div>
+      <section class="lista-servicos">
+        <div class="servico">
+          <h3>✂️ Ajustes Personalizados</h3>
+          <p>
+            Reformamos suas roupas com precisão e cuidado para o caimento
+            perfeito.
+          </p>
         </div>
 
-        <ul>
-          <li><a href="Inicio.html">🏠 Início</a></li>
-          <li><a href="sobre.html">📖 Sobre</a></li>
-          <li><a href="servicos.html">🧵 Serviços</a></li>
-          <li><a href="produto.html">🖼️ Galeria</a></li>
-          <li><a href="contato.html">📞 Contato</a></li>
-          <li><a href="blog.html">📝 Blog</a></li>
-          <li><a href="faq.html">❓ FAQ</a></li>
-        </ul>
-      </nav>
+        <div class="servico">
+          <h3>👗 Criações Sob Medida</h3>
+          <p>
+            Desenvolvemos peças exclusivas com base no seu estilo e medidas.
+          </p>
+        </div>
 
-      <!--final do codigo do menu-->
+        <div class="servico">
+          <h3>🧵 Consertos e Reparos</h3>
+          <p>
+            Costuras soltas, zíperes quebrados ou barras caídas? Nós cuidamos
+            disso!
+          </p>
+        </div>
 
-      <input type="checkbox" id="menu-toggle" />
-      <a href="inicio.html" class="logo-imagem-link">
-        <img src="img/carretel.png" alt="Ateliê da Célia" class="logo-imagem" />
-      </a>
-    </div>
+        <div class="servico">
+          <h3>🪡 Aplicações e Bordados</h3>
+          <p>
+            Detalhes artesanais para dar um toque único às suas peças favoritas.
+          </p>
+        </div>
 
-    <section id="servicos">
-      <h2>Tipos de Serviços</h2>
-
-      <p id="info_servicos">
-        ✂️ Seção 1: Ajustes e Reformas<br />
-        Eu sei como uma peça bem ajustada pode fazer toda a diferença, e é por
-        isso que no meu ateliê, me dedico a oferecer ajustes e reformas que
-        deixam suas roupas com o caimento perfeito. Seja para dar uma nova vida
-        a um vestido ou para ajustar aquele jeans que já é seu favorito, eu
-        cuido de cada detalhe para que você se sinta confortável e confiante.<br />
-
-        ✅ Ajustes em vestidos, calças, saias e blusas<br />
-
-        ✅ Alargamento ou estreitamento de peças<br />
-
-        ✅ Reparos em zíperes, botões e costuras<br />
-
-        ✅ Reformas de roupas antigas para um estilo moderno e único<br />
-        <br />
-        👗 Seção 2: Criações Sob Medida<br />
-        Nada me dá mais prazer do que criar algo exclusivo para você. No meu
-        ateliê, cada peça é feita sob medida, de acordo com o seu estilo, suas
-        necessidades e seus desejos. <br />
-        Seja para o seu grande dia, como o vestido de noiva, ou para um evento
-        especial, vou criar a roupa dos seus sonhos, feita especialmente para
-        você.<br />
-
-        ✅ Vestidos de noiva personalizados<br />
-
-        ✅ Trajes para festas e formaturas<br />
-
-        ✅ Roupas sob medida para ocasiões especiais<br />
-
-        ✅ Consultoria para escolha de tecidos e estilos<br />
-        <br />
-        🎨 Seção 3: Customização de Peças<br />
-        Você sabia que suas roupas antigas podem ganhar uma nova vida? Com a
-        customização, posso transformar aquela peça que você ama, mas que já não
-        usa mais, em algo único e exclusivo. <br />
-        Vou te ajudar a criar looks novos e modernos, refletindo sua
-        personalidade e estilo.<br />
-
-        ✅ Adição de bordados e apliques<br />
-
-        ✅ Pintura e tintura de tecidos<br />
-
-        ✅ Alteração de modelagens e designs<br />
-
-        ✅ Personalização de camisetas, jeans e acessórios<br />
-        <br />
-        👰 Seção 4: Noivas e Festas<br />
-        Criar vestidos de noiva e trajes para festas é uma das minhas maiores
-        paixões.<br />
-        Aqui no meu ateliê, eu me dedico a desenhar e costurar peças que te
-        façam sentir maravilhosa no seu grande dia, seja um casamento, formatura
-        ou qualquer ocasião especial.<br />
-
-        ✅ Vestidos de noiva sob medida, com design exclusivo<br />
-
-        ✅ Acessórios personalizados para noivas<br />
-
-        ✅ Trajes de festa e madrinha, sempre elegantes e confortáveis<br />
-
-        ✅ Consultoria para escolher o modelo ideal para cada corpo e estilo<br />
-        <br />
-        🧵 Seção 5: Consultoria e Atendimento Personalizado<br />
-        Aqui no ateliê, o meu trabalho vai além da costura. Ofereço uma
-        consultoria completa para te ajudar a escolher os melhores modelos,
-        tecidos e acabamentos para que a peça final seja perfeita. Quero que
-        você se sinta única, linda e confortável com a roupa que criar
-        comigo.<br />
-
-        ✅ Consultoria de estilo personalizada<br />
-
-        ✅ Escolha de tecidos de alta qualidade<br />
-
-        ✅ Acompanhamento do processo de criação<br />
-        <br />
-        Venha me visitar e agende sua consulta!<br />
-        Estou à disposição para ajudar a transformar suas ideias em
-        realidade.<br />
-        No meu ateliê, cada peça é feita com muito amor e carinho.<br />
-        Vamos juntos criar algo especial para você!<br />
-        <br />
-        Contatos: <br />
-        📍 Localização: Rua Marfim 561 - Maringá <br />
-        📞 Contato: (99) 9999-9999 <br />
-        🌐 E-mail: contato@atelieceliamoreira.com.br<br />
-      </p>
-    </section>
+        <div class="servico">
+          <h3>🧼 Lavagem Especial</h3>
+          <p>Lavamos com cuidado tecidos delicados e peças especiais.</p>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

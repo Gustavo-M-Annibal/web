@@ -1,69 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mapa do Site - Ateliê da Célia</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="pagina-mapa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa do Site - Ateliê da Célia</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="pagina-mapa">
+    <!-- MENU e LOGO padrão -->
+    <input type="checkbox" id="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+    <a href="inicio.html" class="logo-imagem-link">
+      <img src="img/carretel.png" alt="Ateliê da Célia" class="logo-imagem" />
+    </a>
 
-  <!-- MENU e LOGO padrão -->
-  <input type="checkbox" id="menu-toggle" />
-  <label for="menu-toggle" class="menu-icon">
-    <span></span>
-    <span></span>
-    <span></span>
-  </label>
-  <a href="inicio.html" class="logo-imagem-link">
-    <img src="img/carretel.png" alt="Ateliê da Célia" class="logo-imagem" />
-  </a>
+    <nav class="menu-canto">
+      <div class="perfil">
+        <img src="img/perfil.png" alt="Perfil padrão" class="perfil-img" />
+        <p>Olá, Visitante!</p>
+        <a href="login.html" class="login-link">🔐 Login</a>
+      </div>
+      <ul>
+        <li><a href="Inicio.html">🏠 Início</a></li>
+        <li><a href="blog.html">📝 Blog</a></li>
+        <li><a href="galeria.html">🖼️ Galeria</a></li>
+        <li><a href="produto.html">🛍️ Produtos</a></li>
+        <li><a href="promocoes.html">💸 Promoções</a></li>
+        <li><a href="lancamento.html">🚀 Lançamento</a></li>
+        <li><a href="servicos.html">🧵 Serviços</a></li>
+        <li><a href="faq.html">❓ FAQ</a></li>
+        <li><a href="testemunhos.html">💬 Depoimentos</a></li>
+        <li><a href="contato.html">📞 Contato</a></li>
+        <li><a href="equipe.html">👗 Equipe</a></li>
+        <li><a href="sobre.html">📖 Sobre</a></li>
+        <li><a href="mapa.html">🗺️ Mapa do Site</a></li>
+        <li><a href="tarefas.html">✅ Tarefas</a></li>
+      </ul>
+    </nav>
 
-  <nav class="menu-canto">
-    <div class="perfil">
-      <img src="img/perfil.png" alt="Perfil padrão" class="perfil-img" />
-      <p>Olá, Visitante!</p>
-      <a href="login.html" class="login-link">🔐 Login</a>
-    </div>
-    <ul>
-      <li><a href="Inicio.html">🏠 Início</a></li>
-      <li><a href="sobre.html">📖 Sobre</a></li>
-      <li><a href="servicos.html">🧵 Serviços</a></li>
-      <li><a href="galeria.html">🖼️ Galeria</a></li>
-      <li><a href="contato.html">📞 Contato</a></li>
-      <li><a href="blog.html">📝 Blog</a></li>
-      <li><a href="faq.html">❓ FAQ</a></li>
-      <li><a href="tarefas.html">✅ Tarefas</a></li>
-      <li><a href="testemunhos.html">💬 Depoimentos</a></li>
-      <li><a href="produto.html">🛍️ Produtos</a></li>
-      <li><a href="mapa.html">🗺️ Mapa do Site</a></li>
-    </ul>
-  </nav>
+    <!-- CONTEÚDO -->
+    <main class="conteudo-mapa">
+      <h1 class="titulo-mapa">🗺️ Mapa do Site</h1>
 
-  <!-- CONTEÚDO -->
-  <main class="conteudo-mapa">
-    <h1 class="titulo-mapa">🗺️ Mapa do Site</h1>
-
-    <ul class="estrutura-site">
-      <li><a href="Inicio.html">Início</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="servicos.html">Serviços</a>
-        <ul>
-          <li>Ajustes</li>
-          <li>Consertos</li>
-          <li>Sob medida</li>
-        </ul>
-      </li>
-      <li><a href="galeria.html">Galeria</a></li>
-      <li><a href="produto.html">Produtos</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="tarefas.html">Tarefas</a></li>
-      <li><a href="testemunhos.html">Depoimentos</a></li>
-      <li><a href="contato.html">Contato</a></li>
-      <li><a href="login.html">Login</a></li>
-    </ul>
-  </main>
-
-</body>
+      <ul class="estrutura-site">
+        <li><a href="Inicio.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li>
+          <a href="servicos.html">Serviços</a>
+          <ul>
+            <li>Ajustes Personalizados</li>
+            <li>Criações Sob Medida</li>
+            <li>Consertos e Reparos</li>
+            <li>Aplicações e Bordados</li>
+            <li>Lavagem Especial</li>
+          </ul>
+        </li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="produto.html">Produtos</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="tarefas.html">Tarefas</a></li>
+        <li><a href="testemunhos.html">Depoimentos</a></li>
+        <li><a href="contato.html">Contato</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </main>
+  </body>
 </html>

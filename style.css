@@ -245,34 +245,6 @@ body {
   font-size: 30px;
 }
 
-#info_servicos {
-  text-align: left; /* Alinha o texto à esquerda */
-  font-family: "Century Gothic", sans-serif;
-  color: bisque;
-  font-size: 20px;
-  margin-top: 10px; /* Espaçamento superior */
-}
-
-#info_sobre {
-  text-align: left; /* Alinha o texto à esquerda */
-  font-family: "Century Gothic", sans-serif;
-  color: bisque;
-  font-size: 24px;
-  margin-top: 10px; /* Espaçamento superior */
-}
-
-#info_sobre2 {
-  text-align: left; /* Alinha o texto à esquerda */
-  font-family: "Century Gothic", sans-serif;
-  color: bisque;
-  font-size: 22px;
-  margin-top: 10px; /* Espaçamento superior */
-}
-
-#servicos-lista {
-  color: bisque;
-}
-
 #padrao_id_bar {
   font-size: 50px;
   color: white;
@@ -1361,4 +1333,101 @@ figcaption {
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+.pagina-sobre {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  font-family: "Century Gothic", sans-serif;
+  padding: 120px 20px 60px;
+}
+
+.sobre-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.titulo-sobre {
+  font-size: 36px;
+  color: #facc15;
+  margin-bottom: 40px;
+}
+
+.sobre-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.img-sobre {
+  width: 350px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(250, 204, 21, 0.2);
+}
+
+.texto-sobre {
+  max-width: 500px;
+}
+
+.texto-sobre h2 {
+  margin-top: 20px;
+  color: #facc15;
+  font-size: 22px;
+}
+
+.texto-sobre ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.texto-sobre li {
+  margin-bottom: 8px;
+}
+
+.pagina-servicos {
+  background-color: #1e1e1e;
+  color: #f5f5f5;
+  font-family: "Century Gothic", sans-serif;
+  padding: 120px 20px 60px;
+  text-align: center;
+}
+
+.titulo-servicos {
+  font-size: 36px;
+  color: #facc15;
+  margin-bottom: 40px;
+}
+
+.lista-servicos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.servico {
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 12px;
+  width: 260px;
+  box-shadow: 0 0 10px rgba(250, 204, 21, 0.1);
+  text-align: center;
+}
+
+.servico h3 {
+  color: #facc15;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.servico p {
+  font-size: 14px;
+  color: #ddd;
 }
