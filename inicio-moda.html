@@ -3,39 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ateliê da Célia - Início</title>
     <link rel="stylesheet" href="style.css" />
-    <title>Ateliê da Célia</title>
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <div class="faixa-topo"></div>
-    <div class="imagem-container-amarela">
-      <img
-        src="img/backgroud.png"
-        alt="Imagem Inicial"
-        class="imagem-ajustavel"
-      />
-      <div class="titulo-sobreposto">Ateliê da Célia</div>
-    </div>
-
-    <!--codigo para fazer o menu checkbox em formato de hamburguer-->
+    <!-- TOPO FIXO -->
     <input type="checkbox" id="menu-toggle" />
+    <a href="inicio.html" class="logo-imagem-link">
+      <img src="img/carretel.png" alt="Ateliê da Célia" class="logo-imagem" />
+    </a>
 
-        <!-- Ícone do menu -->
     <label for="menu-toggle" class="menu-icon">
       <span></span>
       <span></span>
       <span></span>
     </label>
 
-<!-- Menu lateral -->
+    <!-- MENU CORRETO -->
     <nav class="menu-canto">
       <div class="perfil">
-        <img src="img/perfil.png" alt="Perfil padrão" class="perfil-img" />
+        <img src="img/perfil.png" alt="Perfil" class="perfil-img" />
         <p>Olá, Visitante!</p>
         <a href="login.html" class="login-link">🔐 Login</a>
       </div>
-
       <ul>
         <li><a href="Inicio.html">🏠 Início</a></li>
         <li><a href="blog.html">📝 Blog</a></li>
@@ -55,22 +46,35 @@
       </ul>
     </nav>
 
-      <!--final do codigo do menu-->
+    <!-- CONTEÚDO PRINCIPAL -->
+    <header class="hero-section">
+      <div class="hero-texto">
+        <h1>Pretty In Print</h1>
+        <p>
+          Nossa nova coleção de estampas tropicais chegou com tudo! Feita com
+          carinho pelas mãos do Ateliê da Célia.
+        </p>
+        <a href="produtos.html" class="botao-loja">Comprar Agora</a>
+      </div>
+      <img src="img/ultra.jpg" alt="Coleção de moda" class="imagem-principal" />
+    </header>
 
-      <input type="checkbox" id="menu-toggle" />
-      <a href="inicio.html" class="logo-imagem-link">
-        <img src="img/carretel.png" alt="Ateliê da Célia" class="logo-imagem" />
-      </a>
-    </div>
-
-    <section>
-      <h1 id="Titulo_principal">📌 Bem-vindo ao nosso Ateliê</h1>
-      <h2 id="Texto_inicial">
-        "Há mais de 10 anos trazendo elegância e exclusividade para cada peça, o
-        Ateliê da Célia é especializado em ajustes, consertos e criações sob
-        medida. Nossa missão é transformar tecidos em verdadeiras obras de arte,
-        feitas com qualidade e perfeição!👗✂️ "
-      </h2>
+    <section class="destaques">
+      <h2>Favoritos da Semana</h2>
+      <div class="grid-destaques">
+        <figure>
+          <img src="img/roupa1.jpg" alt="Vestido Floral" />
+          <figcaption>Vestido Floral</figcaption>
+        </figure>
+        <figure>
+          <img src="img/roupa2.jpg" alt="Blusa Elegante" />
+          <figcaption>Blusa Elegante</figcaption>
+        </figure>
+        <figure>
+          <img src="img/roupa3.jpg" alt="Conjunto Casual" />
+          <figcaption>Conjunto Casual</figcaption>
+        </figure>
+      </div>
     </section>
   </body>
 </html>
