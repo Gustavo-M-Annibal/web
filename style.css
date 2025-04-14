@@ -324,15 +324,13 @@ li {
 }
 
 /* Animação de X ao abrir */
-#menu-toggle:checked + .logo-imagem-link + .menu-icon span:nth-child(1) {
+#menu-toggle:checked + .menu-icon span:nth-child(1) {
   transform: rotate(45deg) translate(5px, 5px);
 }
-
-#menu-toggle:checked + .logo-imagem-link + .menu-icon span:nth-child(2) {
+#menu-toggle:checked + .menu-icon span:nth-child(2) {
   opacity: 0;
 }
-
-#menu-toggle:checked + .logo-imagem-link + .menu-icon span:nth-child(3) {
+#menu-toggle:checked + .menu-icon span:nth-child(3) {
   transform: rotate(-45deg) translate(6px, -6px);
 }
 
@@ -1471,17 +1469,20 @@ figcaption {
 }
 
 .botao-loja {
-  padding: 10px 25px;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff8d1;
+  color: #1e1e1e;
+  padding: 12px 25px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: bold;
-  border-radius: 5px;
-  transition: background 0.3s ease;
+  font-size: 16px;
+  box-shadow: 0 0 8px rgba(250, 204, 21, 0.4);
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .botao-loja:hover {
-  background-color: #333;
+  background-color: #fff0a8;
+  box-shadow: 0 0 12px rgba(250, 204, 21, 0.6);
 }
 
 .imagem-principal {
@@ -1521,4 +1522,60 @@ figcaption {
 .grid-destaques figcaption {
   margin-top: 10px;
   font-style: italic;
+}
+
+/* Hero com imagem de fundo */
+.hero-section.hero-bg {
+  background-image: url("img/atelie.png"); /* imagem de fundo personalizada */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Camada escura para legibilidade */
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Conteúdo centralizado */
+.hero-texto {
+  color: #facc15;
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-texto h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero-texto p {
+  font-size: 18px;
+  color: #f5f5f5;
+  margin-bottom: 25px;
+}
+
+.botao-loja {
+  background-color: #facc15;
+  color: #1e1e1e;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.botao-loja:hover {
+  background-color: #e0b000;
 }

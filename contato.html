@@ -9,58 +9,43 @@
   </head>
   <body class="pagina-contato">
     <div class="faixa-topo"></div>
-    <h1 class="titulo-contato">📬 Fale com o Ateliê</h1>
+    <input type="checkbox" id="menu-toggle" />
 
-    <div class="topo-fixo">
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="menu-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
+    <label for="menu-toggle" class="menu-icon">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
 
-      <nav class="menu-canto">
-        <div class="perfil">
-          <img src="img/perfil.png" alt="Perfil padrão" class="perfil-img" />
+    <!-- Logo -->
+    <a href="inicio.html" class="logo-imagem-link">
+      <img src="img/carretel.png" alt="Ateliê da Célia" class="logo-imagem" />
+    </a>
 
-          <!-- VISITANTE -->
-          <div class="modo" id="visitante">
-            <p>Olá, Visitante!</p>
-            <a href="login.html" class="login-link">🔐 Login</a>
-          </div>
-
-          <!-- ADMIN (visível com #admin na URL) -->
-          <div class="modo" id="admin">
-            <p>Olá, Admin!</p>
-            <a href="inicio.html" class="logout-btn">🚪 Logout</a>
-          </div>
-        </div>
-
-        <ul>
-          <li><a href="Inicio.html">🏠 Início</a></li>
-          <li><a href="blog.html">📝 Blog</a></li>
-          <li><a href="galeria.html">🖼️ Galeria</a></li>
-          <li><a href="produto.html">🛍️ Produtos</a></li>
-          <li><a href="promocoes.html">💸 Promoções</a></li>
-          <li><a href="lancamento.html">🚀 Lançamento</a></li>
-          <li><a href="servicos.html">🧵 Serviços</a></li>
-          <li><a href="faq.html">❓ FAQ</a></li>
-          <li><a href="testemunhos.html">💬 Depoimentos</a></li>
-          <li><a href="contato.html">📞 Contato</a></li>
-          <li><a href="equipe.html">👗 Equipe</a></li>
-          <li><a href="sobre.html">📖 Sobre</a></li>
-          <li><a href="mapa.html">🗺️ Mapa do Site</a></li>
-          <li><a href="tarefas.html">✔️ Tarefas</a></li>
-        </ul>
-      </nav>
-
-      <!--final do codigo do menu-->
-
-      <input type="checkbox" id="menu-toggle" />
-      <a href="inicio.html" class="logo-imagem-link">
-        <img src="img/carretel.png" alt="Ateliê da Célia" class="logo-imagem" />
-      </a>
-    </div>
+    <!-- Menu lateral -->
+    <nav class="menu-canto">
+      <div class="perfil">
+        <img src="img/perfil.png" alt="Perfil" class="perfil-img" />
+        <p>Olá, Visitante!</p>
+        <a href="login.html" class="login-link">🔐 Login</a>
+      </div>
+      <ul>
+        <li><a href="Inicio.html">🏠 Início</a></li>
+        <li><a href="blog.html">📝 Blog</a></li>
+        <li><a href="galeria.html">🖼️ Galeria</a></li>
+        <li><a href="produto.html">🛍️ Produtos</a></li>
+        <li><a href="promocoes.html">💸 Promoções</a></li>
+        <li><a href="lancamento.html">🚀 Lançamento</a></li>
+        <li><a href="servicos.html">🧵 Serviços</a></li>
+        <li><a href="faq.html">❓ FAQ</a></li>
+        <li><a href="testemunhos.html">💬 Depoimentos</a></li>
+        <li><a href="contato.html">📞 Contato</a></li>
+        <li><a href="equipe.html">👗 Equipe</a></li>
+        <li><a href="sobre.html">📖 Sobre</a></li>
+        <li><a href="mapa.html">🗺️ Mapa do Site</a></li>
+        <li><a href="tarefas.html">✔️ Tarefas</a></li>
+      </ul>
+    </nav>
 
     <form class="formulario-contato">
       <label for="nome">Nome:</label>
